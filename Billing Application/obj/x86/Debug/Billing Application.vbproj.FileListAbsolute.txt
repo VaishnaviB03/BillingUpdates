@@ -1,0 +1,26 @@
+H:\VB\Billing Application\Billing Application\bin\Debug\Billing Application.exe.config
+H:\VB\Billing Application\Billing Application\bin\Debug\Billing Application.exe
+H:\VB\Billing Application\Billing Application\bin\Debug\Billing Application.pdb
+H:\VB\Billing Application\Billing Application\bin\Debug\Billing Application.xml
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Home_Page.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Activation.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Create.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Add_Items.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Bill_History.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Debitors_list.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.PurchaseReturn.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Purchase_Ledger.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Sales_Ledger.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.SalesReturnLedger.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Inventory.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Receipt.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.NewBill.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Form1.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Form3.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Intro.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Main_Menu.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Resources.resources
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\Billing Application.vbproj.GenerateResource.Cache
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\Billing Application.exe
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\Billing Application.xml
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\Billing Application.pdb
