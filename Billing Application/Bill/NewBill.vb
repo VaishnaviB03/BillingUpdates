@@ -215,6 +215,7 @@ Public Class NewBill
             sum2 = pcs * amt
             sum3 = sum2
             sum3 = sum3 + temp
+            'Hello World
 
             TextBox1.Text = Conversion.Val(TextBox1.Text) + sum ' ->20+26
 
