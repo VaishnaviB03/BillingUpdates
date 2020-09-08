@@ -1,7 +1,3 @@
-H:\VB\Billing Application\Billing Application\bin\Debug\Billing Application.exe.config
-H:\VB\Billing Application\Billing Application\bin\Debug\Billing Application.exe
-H:\VB\Billing Application\Billing Application\bin\Debug\Billing Application.pdb
-H:\VB\Billing Application\Billing Application\bin\Debug\Billing Application.xml
 H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Home_Page.resources
 H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Activation.resources
 H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Create.resources
@@ -21,6 +17,10 @@ H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.
 H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Main_Menu.resources
 H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.Resources.resources
 H:\VB\Billing Application\Billing Application\obj\x86\Debug\Billing Application.vbproj.GenerateResource.Cache
+H:\VB\Billing Application\Billing Application\bin\Debug\Billing Application.exe.config
+H:\VB\Billing Application\Billing Application\bin\Debug\Billing Application.exe
+H:\VB\Billing Application\Billing Application\bin\Debug\Billing Application.pdb
+H:\VB\Billing Application\Billing Application\bin\Debug\Billing Application.xml
 H:\VB\Billing Application\Billing Application\obj\x86\Debug\Billing Application.exe
 H:\VB\Billing Application\Billing Application\obj\x86\Debug\Billing Application.xml
 H:\VB\Billing Application\Billing Application\obj\x86\Debug\Billing Application.pdb

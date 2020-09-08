@@ -120,7 +120,9 @@ Partial Class Bill_History
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1924, 1055)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Panel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Bill_History"
         Me.Text = "Bill History"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

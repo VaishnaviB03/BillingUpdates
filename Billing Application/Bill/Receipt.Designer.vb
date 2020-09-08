@@ -58,9 +58,11 @@ Partial Class Receipt
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.Label29 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ShapeContainer1
@@ -385,9 +387,9 @@ Partial Class Receipt
         Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label23.Location = New System.Drawing.Point(65, 653)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(57, 20)
+        Me.Label23.Size = New System.Drawing.Size(140, 20)
         Me.Label23.TabIndex = 29
-        Me.Label23.Text = "Tax  :"
+        Me.Label23.Text = "Tax   :    2.5%  "
         '
         'Label24
         '
@@ -395,27 +397,17 @@ Partial Class Receipt
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.Location = New System.Drawing.Point(437, 653)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(180, 20)
+        Me.Label24.Size = New System.Drawing.Size(120, 20)
         Me.Label24.TabIndex = 30
-        Me.Label24.Text = "Amount  Given       :"
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(437, 697)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(182, 20)
-        Me.Label25.TabIndex = 31
-        Me.Label25.Text = "Remaining amount  :"
+        Me.Label24.Text = "Amount       :"
         '
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label26.Location = New System.Drawing.Point(889, 675)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(201, 32)
+        Me.Label26.Size = New System.Drawing.Size(230, 38)
         Me.Label26.TabIndex = 32
         Me.Label26.Text = "Grand Total  :"
         '
@@ -429,14 +421,44 @@ Partial Class Receipt
         Me.Label27.TabIndex = 33
         Me.Label27.Text = "Total Items   :"
         '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(212, 700)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(59, 17)
+        Me.Label25.TabIndex = 34
+        Me.Label25.Text = "Label25"
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Location = New System.Drawing.Point(598, 655)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(59, 17)
+        Me.Label28.TabIndex = 35
+        Me.Label28.Text = "Label28"
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.Location = New System.Drawing.Point(1152, 683)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(99, 29)
+        Me.Label29.TabIndex = 36
+        Me.Label29.Text = "Label29"
+        '
         'Receipt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1924, 1055)
+        Me.Controls.Add(Me.Label29)
+        Me.Controls.Add(Me.Label28)
+        Me.Controls.Add(Me.Label25)
         Me.Controls.Add(Me.Label27)
         Me.Controls.Add(Me.Label26)
-        Me.Controls.Add(Me.Label25)
         Me.Controls.Add(Me.Label24)
         Me.Controls.Add(Me.Label23)
         Me.Controls.Add(Me.Label22)
@@ -509,8 +531,10 @@ Partial Class Receipt
     Friend WithEvents LineShape3 As Microsoft.VisualBasic.PowerPacks.LineShape
     Friend WithEvents Label23 As System.Windows.Forms.Label
     Friend WithEvents Label24 As System.Windows.Forms.Label
-    Friend WithEvents Label25 As System.Windows.Forms.Label
     Friend WithEvents Label26 As System.Windows.Forms.Label
     Friend WithEvents Label27 As System.Windows.Forms.Label
     Friend WithEvents RectangleShape3 As Microsoft.VisualBasic.PowerPacks.RectangleShape
+    Friend WithEvents Label25 As System.Windows.Forms.Label
+    Friend WithEvents Label28 As System.Windows.Forms.Label
+    Friend WithEvents Label29 As System.Windows.Forms.Label
 End Class

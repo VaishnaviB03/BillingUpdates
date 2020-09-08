@@ -25,10 +25,10 @@ Partial Class NewBill
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Label36 = New System.Windows.Forms.Label()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.Label35 = New System.Windows.Forms.Label()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
@@ -36,7 +36,6 @@ Partial Class NewBill
         Me.Label34 = New System.Windows.Forms.Label()
         Me.Label33 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
-        Me.Label37 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -86,16 +85,21 @@ Partial Class NewBill
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.Label40 = New System.Windows.Forms.Label()
+        Me.Label37 = New System.Windows.Forms.Label()
         Me.Label39 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        Me.Panel10.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel6.SuspendLayout()
@@ -131,12 +135,8 @@ Partial Class NewBill
         'Panel4
         '
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel4.Controls.Add(Me.Label36)
-        Me.Panel4.Controls.Add(Me.TextBox10)
-        Me.Panel4.Controls.Add(Me.Label35)
-        Me.Panel4.Controls.Add(Me.TextBox12)
+        Me.Panel4.Controls.Add(Me.Panel10)
         Me.Panel4.Controls.Add(Me.Panel9)
-        Me.Panel4.Controls.Add(Me.Label37)
         Me.Panel4.Controls.Add(Me.Panel5)
         Me.Panel4.Controls.Add(Me.Button4)
         Me.Panel4.Controls.Add(Me.Panel6)
@@ -146,39 +146,42 @@ Partial Class NewBill
         Me.Panel4.Size = New System.Drawing.Size(539, 825)
         Me.Panel4.TabIndex = 68
         '
+        'Panel10
+        '
+        Me.Panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel10.Controls.Add(Me.Label36)
+        Me.Panel10.Controls.Add(Me.TextBox10)
+        Me.Panel10.Controls.Add(Me.Label35)
+        Me.Panel10.Location = New System.Drawing.Point(81, 472)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(354, 100)
+        Me.Panel10.TabIndex = 72
+        '
         'Label36
         '
         Me.Label36.AutoSize = True
         Me.Label36.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label36.Location = New System.Drawing.Point(193, 558)
+        Me.Label36.Location = New System.Drawing.Point(118, 61)
         Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(88, 25)
-        Me.Label36.TabIndex = 74
-        Me.Label36.Text = "Change"
+        Me.Label36.Size = New System.Drawing.Size(0, 25)
+        Me.Label36.TabIndex = 77
         '
         'TextBox10
         '
-        Me.TextBox10.Location = New System.Drawing.Point(238, 521)
+        Me.TextBox10.Location = New System.Drawing.Point(146, 19)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(161, 22)
-        Me.TextBox10.TabIndex = 73
+        Me.TextBox10.TabIndex = 76
         '
         'Label35
         '
         Me.Label35.AutoSize = True
         Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label35.Location = New System.Drawing.Point(110, 517)
+        Me.Label35.Location = New System.Drawing.Point(31, 16)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(82, 25)
-        Me.Label35.TabIndex = 72
+        Me.Label35.TabIndex = 75
         Me.Label35.Text = "Cash  :"
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Location = New System.Drawing.Point(238, 492)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(161, 22)
-        Me.TextBox12.TabIndex = 3
         '
         'Panel9
         '
@@ -189,9 +192,9 @@ Partial Class NewBill
         Me.Panel9.Controls.Add(Me.Label34)
         Me.Panel9.Controls.Add(Me.Label33)
         Me.Panel9.Controls.Add(Me.Label32)
-        Me.Panel9.Location = New System.Drawing.Point(69, 586)
+        Me.Panel9.Location = New System.Drawing.Point(69, 472)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(397, 163)
+        Me.Panel9.Size = New System.Drawing.Size(376, 160)
         Me.Panel9.TabIndex = 71
         '
         'TextBox9
@@ -244,16 +247,6 @@ Partial Class NewBill
         Me.Label32.Size = New System.Drawing.Size(129, 20)
         Me.Label32.TabIndex = 0
         Me.Label32.Text = "Bank Name   :"
-        '
-        'Label37
-        '
-        Me.Label37.AutoSize = True
-        Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.Location = New System.Drawing.Point(107, 492)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(120, 25)
-        Me.Label37.TabIndex = 0
-        Me.Label37.Text = "Phone No :"
         '
         'Panel5
         '
@@ -728,48 +721,100 @@ Partial Class NewBill
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(41, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(203, 20)
+        Me.Label1.Size = New System.Drawing.Size(185, 20)
         Me.Label1.TabIndex = 19
-        Me.Label1.Text = "Bill No.                 :    "
+        Me.Label1.Text = "Bill No.                 : "
         '
         'Panel7
         '
         Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel7.Controls.Add(Me.Label42)
+        Me.Panel7.Controls.Add(Me.Label41)
+        Me.Panel7.Controls.Add(Me.Label40)
+        Me.Panel7.Controls.Add(Me.Label37)
         Me.Panel7.Controls.Add(Me.Label39)
+        Me.Panel7.Controls.Add(Me.Label14)
         Me.Panel7.Controls.Add(Me.Label38)
         Me.Panel7.Controls.Add(Me.Label18)
         Me.Panel7.Controls.Add(Me.Label17)
         Me.Panel7.Controls.Add(Me.Label16)
         Me.Panel7.Controls.Add(Me.Label15)
-        Me.Panel7.Controls.Add(Me.Label14)
         Me.Panel7.Controls.Add(Me.Label13)
         Me.Panel7.Location = New System.Drawing.Point(14, 621)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(929, 109)
         Me.Panel7.TabIndex = 69
         '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.Location = New System.Drawing.Point(528, 71)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(48, 17)
+        Me.Label42.TabIndex = 42
+        Me.Label42.Text = "nvifvin"
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label41.Location = New System.Drawing.Point(27, 68)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(128, 20)
+        Me.Label41.TabIndex = 41
+        Me.Label41.Text = "Cost Of Item :"
+        '
+        'Label40
+        '
+        Me.Label40.AutoSize = True
+        Me.Label40.Location = New System.Drawing.Point(780, 68)
+        Me.Label40.Name = "Label40"
+        Me.Label40.Size = New System.Drawing.Size(0, 17)
+        Me.Label40.TabIndex = 40
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label37.Location = New System.Drawing.Point(673, 68)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(90, 20)
+        Me.Label37.TabIndex = 39
+        Me.Label37.Text = "Saved    :"
+        '
         'Label39
         '
         Me.Label39.AutoSize = True
-        Me.Label39.Location = New System.Drawing.Point(709, 65)
+        Me.Label39.Location = New System.Drawing.Point(789, 32)
         Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(0, 17)
+        Me.Label39.Size = New System.Drawing.Size(42, 17)
         Me.Label39.TabIndex = 38
+        Me.Label39.Text = "nvfvn"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(412, 71)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(96, 20)
+        Me.Label14.TabIndex = 32
+        Me.Label14.Text = "Amount   :"
         '
         'Label38
         '
         Me.Label38.AutoSize = True
         Me.Label38.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label38.Location = New System.Drawing.Point(564, 62)
+        Me.Label38.Location = New System.Drawing.Point(673, 26)
         Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(115, 20)
+        Me.Label38.Size = New System.Drawing.Size(106, 20)
         Me.Label38.TabIndex = 37
-        Me.Label38.Text = "Total Items: "
+        Me.Label38.Text = "Items left : "
         '
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(709, 29)
+        Me.Label18.Location = New System.Drawing.Point(569, 32)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(0, 17)
         Me.Label18.TabIndex = 36
@@ -777,10 +822,11 @@ Partial Class NewBill
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(243, 64)
+        Me.Label17.Location = New System.Drawing.Point(240, 71)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(0, 17)
+        Me.Label17.Size = New System.Drawing.Size(46, 17)
         Me.Label17.TabIndex = 35
+        Me.Label17.Text = "bjbjbb"
         '
         'Label16
         '
@@ -794,21 +840,11 @@ Partial Class NewBill
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(564, 25)
+        Me.Label15.Location = New System.Drawing.Point(412, 32)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(111, 20)
+        Me.Label15.Size = New System.Drawing.Size(152, 20)
         Me.Label15.TabIndex = 33
-        Me.Label15.Text = "Tax           :"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(27, 62)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(192, 20)
-        Me.Label14.TabIndex = 32
-        Me.Label14.Text = "Amount                   :"
+        Me.Label15.Text = "Tax        :   2.5%"
         '
         'Label13
         '
@@ -833,7 +869,8 @@ Partial Class NewBill
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
+        Me.Panel10.ResumeLayout(False)
+        Me.Panel10.PerformLayout()
         Me.Panel9.ResumeLayout(False)
         Me.Panel9.PerformLayout()
         Me.Panel5.ResumeLayout(False)
@@ -917,11 +954,14 @@ Partial Class NewBill
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
-    Friend WithEvents Label35 As System.Windows.Forms.Label
-    Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
-    Friend WithEvents Label37 As System.Windows.Forms.Label
-    Friend WithEvents Label36 As System.Windows.Forms.Label
     Friend WithEvents Label39 As System.Windows.Forms.Label
     Friend WithEvents Label38 As System.Windows.Forms.Label
+    Friend WithEvents Panel10 As System.Windows.Forms.Panel
+    Friend WithEvents Label36 As System.Windows.Forms.Label
+    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
+    Friend WithEvents Label35 As System.Windows.Forms.Label
+    Friend WithEvents Label37 As System.Windows.Forms.Label
+    Friend WithEvents Label40 As System.Windows.Forms.Label
+    Friend WithEvents Label41 As System.Windows.Forms.Label
+    Friend WithEvents Label42 As System.Windows.Forms.Label
 End Class

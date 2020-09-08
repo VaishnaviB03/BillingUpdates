@@ -30,14 +30,6 @@ Public Class Inventory
             Dim msg As Integer = MsgBox("Do You want to delete item from Inventory?", MsgBoxStyle.YesNo)
             If msg = DialogResult.Yes Then
                 Try
-                    'DataGridView1.Rows.RemoveAt(index)
-                    'conn.Open()
-                    'Dim cmd As New OleDbCommand("Delete from Products where ProductName= '" + TextBox1.Text + "'", conn)
-                    'MsgBox("Item Removed", MsgBoxStyle.Information)
-                    'TextBox1.Text = Nothing
-
-
-
                     conn.Open()
                     DataGridView1.Rows.RemoveAt(index)
                     str = " Delete from Products where ProductName=TextBox1.Text"
@@ -56,12 +48,6 @@ Public Class Inventory
             End If
         End If
         getdata()
-        'DataGridView1.Rows.RemoveAt(index)
-        'conn.Open()
-        'Dim cmd As New OleDbCommand("Delete from Products where ProductName= '" + TextBox1.Text + "'", conn)
-        'TextBox1.Text = Nothing
-        'MsgBox("Item Removed", MsgBoxStyle.Information)
-        'conn.Close()
     End Sub
 
 
@@ -73,6 +59,18 @@ Public Class Inventory
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        conn.Close()
+        conn.Open()
+        Using cmd As New OleDbCommand
+            cmd.CommandText = "Select * from Products where ProductName LIKE TextBox1.Text + '%'"
+            cmd.Connection = conn
+            cmd.Parameters.AddWithValue("TextBox1.Text", TextBox1.Text.Trim())
+            Dim dt As New DataTable
+            Using da As New OleDbDataAdapter(cmd)
+                da.Fill(dt)
+                DataGridView1.DataSource = dt
+            End Using
+        End Using
         'getdata()
     End Sub
 
@@ -88,15 +86,13 @@ Public Class Inventory
         conn.Close()
         conn.Open()
         Using cmd As New OleDbCommand
-            cmd.CommandText = "Select * from Products where ProductName =TextBox1.Text"
+            cmd.CommandText = "Select * From Products "
             cmd.Connection = conn
-            ' cmd = New OleDbCommand(str, conn)
-            cmd.Parameters.AddWithValue("TextBox1.Text", TextBox1.Text.Trim())
             Dim dt As New DataTable
             Using da As New OleDbDataAdapter(cmd)
                 da.Fill(dt)
                 DataGridView1.DataSource = dt
-
+                conn.Close()
             End Using
         End Using
     End Sub

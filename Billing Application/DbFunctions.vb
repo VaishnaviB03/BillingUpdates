@@ -12,9 +12,28 @@ Module M1
     Public pnm As String
     Public amt As String
     Public itemadd As Integer = 0
-    Public count As Integer
-End Module
+    Public count As Integer = 0
+    Public dis As Integer
+    Public pcs As Integer
+    Public quantity As Integer
+    Public quantity2 As Integer
+    Public str1 As Integer
+    Public a As Integer
+    Public b As Integer
+    Public items As Integer
 
+
+End Module
+Module AR
+    Public billno As Integer
+    Public cn As String
+    Public ad As String
+    Public phone As Integer
+    Public remark As String
+    Public mode As String
+    Public dnt As Integer
+    Public ta As Integer
+End Module
 Module Functions
     Public Sub UserCreation()
         Try
@@ -39,7 +58,7 @@ Module Functions
             MsgBox("Login Failed Check Your Username/Password", MsgBoxStyle.Critical)
             conn.Close()
         Else
-            MsgBox("Logged In Successfully", MsgBoxStyle.Information)
+            'MsgBox("Logged In Successfully", MsgBoxStyle.Information)
             Main_Menu.Show()
             Form1.Close()
         End If

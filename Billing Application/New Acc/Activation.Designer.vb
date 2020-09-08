@@ -70,6 +70,7 @@ Partial Class Activation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(568, 266)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button2)
