@@ -75,4 +75,10 @@ Public Class Add_Items
         Main_Menu.Show()
         Me.Close()
     End Sub
+
+    'Private Sub DateTimePicker2_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DateTimePicker2.TextChanged
+    '    If DateTimePicker2.Text <= DateTimePicker1.Text Then
+    '        MsgBox("Product Expired", MsgBoxStyle.Information)
+    '    End If
+    'End Sub
 End Class

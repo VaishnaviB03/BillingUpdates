@@ -93,6 +93,7 @@ Public Class NewBill
                 Label2.Text = dr.GetValue(5)
                 Label39.Text = dr.GetValue(4)
                 str1 = dr.GetValue(4)
+                stock = dr.GetValue(4)
                 dr.Close()
             End If
         Catch ex As Exception
@@ -215,8 +216,6 @@ Public Class NewBill
             sum2 = pcs * amt
             sum3 = sum2
             sum3 = sum3 + temp
-            'Hello World
-
             TextBox1.Text = Conversion.Val(TextBox1.Text) + sum ' ->20+26
 
             ListBox1.Items.Add(pnm)
@@ -231,16 +230,11 @@ Public Class NewBill
             Receipt.ListBox4.Items.Add(dis)
             Receipt.ListBox5.Items.Add(sum)
 
-
-
             Label36.Text = count
             Label17.Text = sum1
             add()
             quantity2 = Label39.Text
             Label42.Text = sum
-        
-
-            
 
             Try
                 conn.Open()
@@ -256,8 +250,6 @@ Public Class NewBill
             TextBox2.Text = Nothing
             ComboBox1.Text = Nothing
 
-            'items = Label39.Text
-            ' Label40.Text = Conversion.Val(Label42.Text) - Conversion.Val(Label17.Text)
 
         End If
     End Sub
@@ -289,6 +281,20 @@ Public Class NewBill
         AddReceipt()
         If ListBox1.Items.Count = 0 Then
             MsgBox("Enter Items To Cart To Proceed!")
+        Else
+            conn.Close()
+            conn.Open()
+            cmd = New OleDbCommand("Insert into Bill(BillNo,Date,Customer_Name,ContactNo,Total_Amt,Mode_of_payment,Discount_allowed) values('" + Label2.Text + "','" + DateTimePicker1.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox1.Text + "','" + ComboBox2.Text + "')", conn)
+            Dim i As Integer = cmd.ExecuteNonQuery()
+            If (i > 0) Then
+                conn.Close()
+                Main_Menu.Show()
+                Me.Close()
+            Else
+                MsgBox("Bill Cannot Be Generated", MsgBoxStyle.Exclamation)
+                conn.Close()
+
+            End If
         End If
     End Sub
 
@@ -350,7 +356,7 @@ Public Class NewBill
             Label39.Text = Conversion.Val(Label39.Text) - Conversion.Val(ListBox2.SelectedItem)
             Label17.Text = Conversion.Val(Label17.Text) - Conversion.Val(Label42.Text)
             items = Label39.Text
-            
+            TextBox1.Text = Nothing
 
 
         End If
@@ -379,6 +385,13 @@ Public Class NewBill
   
     Private Sub Label17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label17.Click
 
+    End Sub
+
+    Private Sub TextBox2_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
+        If Conversion.Val(TextBox2.Text) > stock Then
+            MsgBox("Not Enough Stock", MsgBoxStyle.Critical)
+            TextBox2.Text = Nothing
+        End If
     End Sub
 End Class
 

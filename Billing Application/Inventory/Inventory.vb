@@ -6,7 +6,7 @@ Public Class Inventory
     Public Sub datagridshow()
         Dim ds As New DataSet
         Dim dt As New DataTable
-        Dim da As New OleDbDataAdapter("Select * from Products", conn)
+        Dim da As New OleDbDataAdapter("Select * from Bill", conn)
         da.Fill(dt)
         DataGridView1.DataSource = dt.DefaultView
         conn.Close()

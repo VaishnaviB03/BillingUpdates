@@ -25,8 +25,8 @@ Partial Class Bill_History
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Delete = New System.Windows.Forms.Button()
+        Me.SearchBtn = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
@@ -38,8 +38,8 @@ Partial Class Bill_History
         '
         Me.Panel1.Controls.Add(Me.TextBox1)
         Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.Delete)
+        Me.Panel1.Controls.Add(Me.SearchBtn)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.DataGridView1)
@@ -66,25 +66,25 @@ Partial Class Bill_History
         Me.Button3.Text = "Back"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Delete
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(750, 190)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(134, 30)
-        Me.Button2.TabIndex = 11
-        Me.Button2.Text = "Delete"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Delete.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Delete.Location = New System.Drawing.Point(750, 190)
+        Me.Delete.Name = "Delete"
+        Me.Delete.Size = New System.Drawing.Size(134, 30)
+        Me.Delete.TabIndex = 11
+        Me.Delete.Text = "Delete"
+        Me.Delete.UseVisualStyleBackColor = True
         '
-        'Button1
+        'SearchBtn
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(583, 190)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(141, 30)
-        Me.Button1.TabIndex = 10
-        Me.Button1.Text = "Search"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.SearchBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SearchBtn.Location = New System.Drawing.Point(583, 190)
+        Me.SearchBtn.Name = "SearchBtn"
+        Me.SearchBtn.Size = New System.Drawing.Size(141, 30)
+        Me.SearchBtn.TabIndex = 10
+        Me.SearchBtn.Text = "Search"
+        Me.SearchBtn.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -135,8 +135,8 @@ Partial Class Bill_History
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Delete As System.Windows.Forms.Button
+    Friend WithEvents SearchBtn As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView

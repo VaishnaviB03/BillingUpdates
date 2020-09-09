@@ -21,7 +21,7 @@ Module M1
     Public a As Integer
     Public b As Integer
     Public items As Integer
-
+    Public stock As Integer
 
 End Module
 Module AR
