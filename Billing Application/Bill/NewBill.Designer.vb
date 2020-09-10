@@ -22,6 +22,7 @@ Partial Class NewBill
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NewBill))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -97,6 +98,7 @@ Partial Class NewBill
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label43 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel10.SuspendLayout()
@@ -112,8 +114,10 @@ Partial Class NewBill
         'Panel1
         '
         Me.Panel1.AutoSize = True
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.Label12)
+        Me.Panel1.Controls.Add(Me.Label43)
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Controls.Add(Me.Panel8)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -126,14 +130,15 @@ Partial Class NewBill
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(883, 8)
+        Me.Label12.Location = New System.Drawing.Point(697, -56)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(220, 58)
+        Me.Label12.Size = New System.Drawing.Size(124, 87)
         Me.Label12.TabIndex = 68
-        Me.Label12.Text = "Happy Shopping!!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label12.Text = "BILL-PAY" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Panel4
         '
+        Me.Panel4.BackColor = System.Drawing.Color.Transparent
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel4.Controls.Add(Me.Panel10)
         Me.Panel4.Controls.Add(Me.Panel9)
@@ -148,6 +153,7 @@ Partial Class NewBill
         '
         'Panel10
         '
+        Me.Panel10.BackColor = System.Drawing.Color.LightGray
         Me.Panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel10.Controls.Add(Me.Label36)
         Me.Panel10.Controls.Add(Me.TextBox10)
@@ -185,6 +191,7 @@ Partial Class NewBill
         '
         'Panel9
         '
+        Me.Panel9.BackColor = System.Drawing.Color.LightGray
         Me.Panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel9.Controls.Add(Me.TextBox9)
         Me.Panel9.Controls.Add(Me.TextBox8)
@@ -250,6 +257,7 @@ Partial Class NewBill
         '
         'Panel5
         '
+        Me.Panel5.BackColor = System.Drawing.Color.LightGray
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel5.Controls.Add(Me.Button3)
         Me.Panel5.Controls.Add(Me.Button2)
@@ -377,6 +385,7 @@ Partial Class NewBill
         '
         'Panel6
         '
+        Me.Panel6.BackColor = System.Drawing.Color.LightGray
         Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel6.Controls.Add(Me.TextBox2)
         Me.Panel6.Controls.Add(Me.ComboBox2)
@@ -399,7 +408,7 @@ Partial Class NewBill
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Cash", "Paytm", "Gpay", "PhonePay", "Cheque"})
+        Me.ComboBox2.Items.AddRange(New Object() {"Cash", "Paytm", "Gpay", "PhonePay", "Cheque", "Unpaid"})
         Me.ComboBox2.Location = New System.Drawing.Point(235, 102)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(121, 24)
@@ -455,7 +464,9 @@ Partial Class NewBill
         '
         'Panel8
         '
+        Me.Panel8.BackColor = System.Drawing.Color.Transparent
         Me.Panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel8.Controls.Add(Me.Label12)
         Me.Panel8.Controls.Add(Me.Panel2)
         Me.Panel8.Controls.Add(Me.TextBox1)
         Me.Panel8.Controls.Add(Me.Label19)
@@ -468,6 +479,7 @@ Partial Class NewBill
         '
         'Panel2
         '
+        Me.Panel2.BackColor = System.Drawing.Color.LightGray
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel2.Controls.Add(Me.Label31)
         Me.Panel2.Controls.Add(Me.Label30)
@@ -600,6 +612,7 @@ Partial Class NewBill
         '
         'Panel3
         '
+        Me.Panel3.BackColor = System.Drawing.Color.LightGray
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel3.Controls.Add(Me.Label11)
         Me.Panel3.Controls.Add(Me.Label10)
@@ -613,9 +626,9 @@ Partial Class NewBill
         Me.Panel3.Controls.Add(Me.Label2)
         Me.Panel3.Controls.Add(Me.Label3)
         Me.Panel3.Controls.Add(Me.Label1)
-        Me.Panel3.Location = New System.Drawing.Point(22, 34)
+        Me.Panel3.Location = New System.Drawing.Point(12, 32)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(931, 153)
+        Me.Panel3.Size = New System.Drawing.Size(932, 153)
         Me.Panel3.TabIndex = 67
         '
         'Label11
@@ -727,6 +740,7 @@ Partial Class NewBill
         '
         'Panel7
         '
+        Me.Panel7.BackColor = System.Drawing.Color.LightGray
         Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel7.Controls.Add(Me.Label42)
         Me.Panel7.Controls.Add(Me.Label41)
@@ -750,9 +764,8 @@ Partial Class NewBill
         Me.Label42.AutoSize = True
         Me.Label42.Location = New System.Drawing.Point(528, 71)
         Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(48, 17)
+        Me.Label42.Size = New System.Drawing.Size(0, 17)
         Me.Label42.TabIndex = 42
-        Me.Label42.Text = "nvifvin"
         '
         'Label41
         '
@@ -787,9 +800,8 @@ Partial Class NewBill
         Me.Label39.AutoSize = True
         Me.Label39.Location = New System.Drawing.Point(789, 32)
         Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(42, 17)
+        Me.Label39.Size = New System.Drawing.Size(0, 17)
         Me.Label39.TabIndex = 38
-        Me.Label39.Text = "nvfvn"
         '
         'Label14
         '
@@ -824,9 +836,8 @@ Partial Class NewBill
         Me.Label17.AutoSize = True
         Me.Label17.Location = New System.Drawing.Point(240, 71)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(46, 17)
+        Me.Label17.Size = New System.Drawing.Size(0, 17)
         Me.Label17.TabIndex = 35
-        Me.Label17.Text = "bjbjbb"
         '
         'Label16
         '
@@ -840,11 +851,11 @@ Partial Class NewBill
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(412, 32)
+        Me.Label15.Location = New System.Drawing.Point(412, 26)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(152, 20)
+        Me.Label15.Size = New System.Drawing.Size(158, 40)
         Me.Label15.TabIndex = 33
-        Me.Label15.Text = "Tax        :   2.5%"
+        Me.Label15.Text = "Tax        :   2.5% " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label13
         '
@@ -855,6 +866,16 @@ Partial Class NewBill
         Me.Label13.Size = New System.Drawing.Size(194, 20)
         Me.Label13.TabIndex = 31
         Me.Label13.Text = "Mode Of Payment     :"
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label43.Location = New System.Drawing.Point(854, 18)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(175, 39)
+        Me.Label43.TabIndex = 70
+        Me.Label43.Text = "BILL-PAY"
         '
         'NewBill
         '
@@ -964,4 +985,5 @@ Partial Class NewBill
     Friend WithEvents Label40 As System.Windows.Forms.Label
     Friend WithEvents Label41 As System.Windows.Forms.Label
     Friend WithEvents Label42 As System.Windows.Forms.Label
+    Friend WithEvents Label43 As System.Windows.Forms.Label
 End Class

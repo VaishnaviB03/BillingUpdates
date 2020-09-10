@@ -24,6 +24,7 @@ Partial Class Main_Menu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main_Menu))
         Me.MenuStrip = New System.Windows.Forms.MenuStrip()
         Me.BILLToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewBillToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -163,6 +164,8 @@ Partial Class Main_Menu
         '
         'Panel1
         '
+        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 28)
         Me.Panel1.Name = "Panel1"

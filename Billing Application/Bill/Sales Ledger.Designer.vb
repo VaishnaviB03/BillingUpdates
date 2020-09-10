@@ -22,6 +22,7 @@ Partial Class Sales_Ledger
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Sales_Ledger))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -55,6 +56,7 @@ Partial Class Sales_Ledger
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(796, 29)
         Me.Label1.Name = "Label1"
@@ -74,6 +76,7 @@ Partial Class Sales_Ledger
         '
         'Panel1
         '
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Panel1.Controls.Add(Me.Panel7)
         Me.Panel1.Controls.Add(Me.Panel6)
         Me.Panel1.Controls.Add(Me.Panel5)
@@ -94,6 +97,7 @@ Partial Class Sales_Ledger
         '
         'Panel7
         '
+        Me.Panel7.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel7.Controls.Add(Me.Label7)
         Me.Panel7.Location = New System.Drawing.Point(1423, 73)
@@ -113,6 +117,7 @@ Partial Class Sales_Ledger
         '
         'Panel6
         '
+        Me.Panel6.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel6.Controls.Add(Me.Label6)
         Me.Panel6.Location = New System.Drawing.Point(1097, 73)
@@ -132,6 +137,7 @@ Partial Class Sales_Ledger
         '
         'Panel5
         '
+        Me.Panel5.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel5.Controls.Add(Me.Label5)
         Me.Panel5.Location = New System.Drawing.Point(899, 73)
@@ -151,6 +157,7 @@ Partial Class Sales_Ledger
         '
         'Panel4
         '
+        Me.Panel4.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel4.Controls.Add(Me.Label4)
         Me.Panel4.Location = New System.Drawing.Point(709, 73)
@@ -170,6 +177,7 @@ Partial Class Sales_Ledger
         '
         'Panel3
         '
+        Me.Panel3.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel3.Controls.Add(Me.Label3)
         Me.Panel3.Location = New System.Drawing.Point(379, 73)
@@ -189,6 +197,7 @@ Partial Class Sales_Ledger
         '
         'Panel2
         '
+        Me.Panel2.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Location = New System.Drawing.Point(191, 73)
@@ -264,6 +273,7 @@ Partial Class Sales_Ledger
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(1942, 1102)
         Me.ControlBox = False
         Me.Controls.Add(Me.Panel1)

@@ -70,6 +70,10 @@ Public Class NewBill
             Panel9.Visible = True
             Panel10.Visible = False
             Label36.Visible = False
+        ElseIf ComboBox2.SelectedItem = "Unpaid" Then
+            Panel9.Visible = False
+            Panel10.Visible = False
+            Button4.Visible = False
 
         End If
 
@@ -362,10 +366,10 @@ Public Class NewBill
         End If
     End Sub
     Private Sub AddReceipt()
-        billno = Label2.Text
+        'billno = Label2.Text
         cn = Label4.Text
         ad = Label6.Text
-        phone = Label10.Text
+        'phone = Label10.Text
         remark = Label11.Text
         mode = Label17.Text
         amt = Label42.Text

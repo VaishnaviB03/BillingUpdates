@@ -22,6 +22,7 @@ Partial Class PurchaseReturn
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PurchaseReturn))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -33,15 +34,15 @@ Partial Class PurchaseReturn
         Me.ListBox4 = New System.Windows.Forms.ListBox()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.ListBox6 = New System.Windows.Forms.ListBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.ListBox3 = New System.Windows.Forms.ListBox()
         Me.ListBox2 = New System.Windows.Forms.ListBox()
@@ -57,10 +58,11 @@ Partial Class PurchaseReturn
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(736, 113)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(519, 52)
+        Me.Label1.Size = New System.Drawing.Size(512, 51)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Purchase Return Ledger"
         '
@@ -77,6 +79,7 @@ Partial Class PurchaseReturn
         '
         'Panel1
         '
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Panel1.Controls.Add(Me.Panel5)
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Controls.Add(Me.ListBox5)
@@ -99,6 +102,7 @@ Partial Class PurchaseReturn
         '
         'Panel5
         '
+        Me.Panel5.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel5.Controls.Add(Me.Label6)
         Me.Panel5.Location = New System.Drawing.Point(953, 70)
@@ -118,6 +122,7 @@ Partial Class PurchaseReturn
         '
         'Panel4
         '
+        Me.Panel4.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel4.Controls.Add(Me.Label5)
         Me.Panel4.Location = New System.Drawing.Point(773, 70)
@@ -176,16 +181,6 @@ Partial Class PurchaseReturn
         Me.Label9.TabIndex = 30
         Me.Label9.Text = "Cr."
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(45, 13)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(86, 25)
-        Me.Label7.TabIndex = 14
-        Me.Label7.Text = "Amount"
-        '
         'ListBox6
         '
         Me.ListBox6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -196,24 +191,35 @@ Partial Class PurchaseReturn
         Me.ListBox6.Size = New System.Drawing.Size(194, 516)
         Me.ListBox6.TabIndex = 28
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(48, 13)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(57, 25)
-        Me.Label2.TabIndex = 9
-        Me.Label2.Text = "Date"
-        '
         'Panel6
         '
+        Me.Panel6.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel6.Controls.Add(Me.Label7)
         Me.Panel6.Location = New System.Drawing.Point(1294, 70)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(196, 56)
         Me.Panel6.TabIndex = 36
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(45, 13)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(86, 25)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "Amount"
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel3.Controls.Add(Me.Label4)
+        Me.Panel3.Location = New System.Drawing.Point(581, 70)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(192, 56)
+        Me.Panel3.TabIndex = 33
         '
         'Label4
         '
@@ -225,6 +231,16 @@ Partial Class PurchaseReturn
         Me.Label4.TabIndex = 11
         Me.Label4.Text = "Amount"
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.Label3)
+        Me.Panel2.Location = New System.Drawing.Point(241, 70)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(340, 56)
+        Me.Panel2.TabIndex = 32
+        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -235,32 +251,25 @@ Partial Class PurchaseReturn
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "Particulars"
         '
-        'Panel3
-        '
-        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel3.Controls.Add(Me.Label4)
-        Me.Panel3.Location = New System.Drawing.Point(581, 70)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(192, 56)
-        Me.Panel3.TabIndex = 33
-        '
-        'Panel2
-        '
-        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Location = New System.Drawing.Point(241, 70)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(340, 56)
-        Me.Panel2.TabIndex = 32
-        '
         'Panel7
         '
+        Me.Panel7.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel7.Controls.Add(Me.Label2)
         Me.Panel7.Location = New System.Drawing.Point(62, 70)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(179, 56)
         Me.Panel7.TabIndex = 31
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(48, 13)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(57, 25)
+        Me.Label2.TabIndex = 9
+        Me.Label2.Text = "Date"
         '
         'Label8
         '
@@ -297,6 +306,7 @@ Partial Class PurchaseReturn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(1924, 1055)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)

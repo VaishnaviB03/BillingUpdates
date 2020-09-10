@@ -22,6 +22,7 @@ Partial Class Bill_History
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Bill_History))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -36,6 +37,7 @@ Partial Class Bill_History
         '
         'Panel1
         '
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Panel1.Controls.Add(Me.TextBox1)
         Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.Delete)
@@ -51,7 +53,7 @@ Partial Class Bill_History
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(223, 190)
+        Me.TextBox1.Location = New System.Drawing.Point(275, 179)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(279, 30)
         Me.TextBox1.TabIndex = 13
@@ -59,7 +61,7 @@ Partial Class Bill_History
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(903, 190)
+        Me.Button3.Location = New System.Drawing.Point(955, 179)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(133, 30)
         Me.Button3.TabIndex = 12
@@ -69,7 +71,7 @@ Partial Class Bill_History
         'Delete
         '
         Me.Delete.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Delete.Location = New System.Drawing.Point(750, 190)
+        Me.Delete.Location = New System.Drawing.Point(802, 179)
         Me.Delete.Name = "Delete"
         Me.Delete.Size = New System.Drawing.Size(134, 30)
         Me.Delete.TabIndex = 11
@@ -79,7 +81,7 @@ Partial Class Bill_History
         'SearchBtn
         '
         Me.SearchBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SearchBtn.Location = New System.Drawing.Point(583, 190)
+        Me.SearchBtn.Location = New System.Drawing.Point(635, 179)
         Me.SearchBtn.Name = "SearchBtn"
         Me.SearchBtn.Size = New System.Drawing.Size(141, 30)
         Me.SearchBtn.TabIndex = 10
@@ -100,7 +102,7 @@ Partial Class Bill_History
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(84, 184)
+        Me.Label1.Location = New System.Drawing.Point(136, 173)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(119, 36)
         Me.Label1.TabIndex = 8
@@ -109,16 +111,17 @@ Partial Class Bill_History
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(79, 236)
+        Me.DataGridView1.Location = New System.Drawing.Point(132, 226)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(1188, 420)
+        Me.DataGridView1.Size = New System.Drawing.Size(1162, 557)
         Me.DataGridView1.TabIndex = 7
         '
         'Bill_History
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(1924, 1055)
         Me.ControlBox = False
         Me.Controls.Add(Me.Panel1)

@@ -138,10 +138,10 @@
     <Compile Include="Accounts\Purchase Ledger.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Accounts\Sales Ledger.Designer.vb">
+    <Compile Include="Bill\Sales Ledger.Designer.vb">
       <DependentUpon>Sales Ledger.vb</DependentUpon>
     </Compile>
-    <Compile Include="Accounts\Sales Ledger.vb">
+    <Compile Include="Bill\Sales Ledger.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Accounts\Sales Return Ledger.Designer.vb">
@@ -213,6 +213,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Project info\About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project info\About.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Home Page\Home Page.resx">
@@ -239,7 +245,7 @@
     <EmbeddedResource Include="Accounts\Purchase Ledger.resx">
       <DependentUpon>Purchase Ledger.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Accounts\Sales Ledger.resx">
+    <EmbeddedResource Include="Bill\Sales Ledger.resx">
       <DependentUpon>Sales Ledger.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Accounts\Sales Return Ledger.resx">
@@ -271,6 +277,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project info\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

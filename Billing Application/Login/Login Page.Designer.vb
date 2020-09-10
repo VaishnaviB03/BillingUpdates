@@ -56,10 +56,11 @@ Partial Class Form1
         '
         'LinkLabel1
         '
+        Me.LinkLabel1.ActiveLinkColor = System.Drawing.Color.DimGray
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
         Me.LinkLabel1.Font = New System.Drawing.Font("Bookman Old Style", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.Location = New System.Drawing.Point(307, 244)
+        Me.LinkLabel1.Location = New System.Drawing.Point(206, 230)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(162, 19)
         Me.LinkLabel1.TabIndex = 10
@@ -81,7 +82,7 @@ Partial Class Form1
         '
         Me.Button1.BackColor = System.Drawing.Color.Transparent
         Me.Button1.Font = New System.Drawing.Font("Bookman Old Style", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(210, 287)
+        Me.Button1.Location = New System.Drawing.Point(210, 289)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(108, 30)
         Me.Button1.TabIndex = 5
@@ -92,10 +93,11 @@ Partial Class Form1
         '
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox1.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox1.Font = New System.Drawing.Font("Bookman Old Style", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.CheckBox1.Location = New System.Drawing.Point(210, 204)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(137, 23)
+        Me.CheckBox1.Size = New System.Drawing.Size(138, 21)
         Me.CheckBox1.TabIndex = 1
         Me.CheckBox1.Text = "Show Password"
         Me.CheckBox1.UseVisualStyleBackColor = False
@@ -122,7 +124,8 @@ Partial Class Form1
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Bookman Old Style", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(49, 160)
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label3.Location = New System.Drawing.Point(40, 157)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(126, 28)
         Me.Label3.TabIndex = 2
@@ -133,6 +136,7 @@ Partial Class Form1
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Bookman Old Style", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label2.Location = New System.Drawing.Point(40, 105)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(135, 28)
@@ -144,6 +148,7 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Bookman Old Style", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Black
         Me.Label1.Location = New System.Drawing.Point(244, 39)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(169, 32)

@@ -24,3 +24,4 @@ H:\VB\Billing Application\Billing Application\bin\Debug\Billing Application.xml
 H:\VB\Billing Application\Billing Application\obj\x86\Debug\Billing Application.exe
 H:\VB\Billing Application\Billing Application\obj\x86\Debug\Billing Application.xml
 H:\VB\Billing Application\Billing Application\obj\x86\Debug\Billing Application.pdb
+H:\VB\Billing Application\Billing Application\obj\x86\Debug\WindowsApplication1.About.resources
